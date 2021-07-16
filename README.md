@@ -1,6 +1,11 @@
-# Quarkus 2 vs Quarkus 1 - Developer's Experience
+<p align="center">
+  <span>English</span> |
+  <a href="https://github.com/atomixxx/q/blob/master/README.de.md">Deutsch</a>
+</p>
 
-Couple of days ago the Quarkus Community introduced a new major release - Quarkus 2.
+# Quarkus 2 vs Quarkus 1 – Developer's Experience
+
+Couple of days ago the Quarkus Community introduced a new major release – Quarkus 2.
 
 Quarkus 1 is awesome. Not only because of the features it brings but mostly about how easy it is to develop with it.
 Then comes Quarkus 2 which brings the developer's experience to another level.
@@ -43,7 +48,7 @@ right now. In case we do, we can just press `"r"` and they will run for the firs
 
 Next time I decide to run the tests and press `"r"`, not all tests will be executed but rather only those which were
 either: 1) changed or 2) newly added or 3) their tested code has been changed. Makes sense, especially in the cases when
-there are a lot of tests?
+there are a lot of tests.
 
 > **_NOTE:_** This feature has some deviations in different 2.x versions. In some versions one has to [p]ause and
 > [r]esume tests in order to get the new code and test code reloaded
@@ -71,7 +76,7 @@ its own DB and Kafka. If I have already played with my API and modified the DB c
 tests would potentially be unreliable, right? The Quarkus team took also that into consideration, so the answer is
 "Don't worry". It is true that the Dev and the tests would run in the same JVM, but they are in isolated classloaders.
 The data in DB is also not going to be polluted because the tests would start its own DB container. At some point all
-the external dependencies may be running twice - 2 DB containers, 2 Kafka brokers. This is going to last at most until
+the external dependencies may be running twice – 2 DB containers, 2 Kafka brokers. This is going to last at most until
 the tests finish and that is absolutely fine.
 
 ## General Remarks
